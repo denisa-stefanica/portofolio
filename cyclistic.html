@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cyclistic Case Study – Your Name</title>
+<meta name="description" content="How do annual members and casual riders use Cyclistic bikes differently? A bike-share data analysis case study.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="index.html"><span class="todo">Your Name</span></a>
+  <nav aria-label="Main"><a href="index.html#projects">Projects</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a></nav>
+</div></header>
+<main class="wrap">
+  <a class="back" href="index.html#projects">Back to projects</a>
+  <div class="hero" style="padding-top:2rem">
+    <h1>How do casual riders and annual members use Cyclistic bikes differently?</h1>
+    <p class="meta">Google Data Analytics Capstone, Case Study 1. Tools: <span class="todo">Python, SQL, Tableau</span>. <a href="https://github.com/your-username/cyclistic-bike-share-case-study">View the code on GitHub</a></p>
+  </div>
+
+  <section id="task">
+    <h2>Business task</h2>
+    <p>Cyclistic is a Chicago bike-share company. Its director of marketing, Lily Moreno, believes future growth depends on maximizing annual memberships, which finance has found to be far more profitable than single-ride and day passes.</p>
+    <p>My task was to understand how annual members and casual riders use Cyclistic bikes differently, so the marketing team can design a strategy to convert casual riders into members. The findings go to Moreno, the marketing analytics team and the executive team, who must approve any recommendation.</p>
+  </section>
+
+  <section id="data">
+    <h2>Data sources</h2>
+    <p>I used Cyclistic’s public historical trip data for the previous 12 months (<span class="todo">e.g. Month Year to Month Year</span>), provided by Motivate International Inc. under its public data license. Each monthly CSV file holds one row per trip, including start and end time, bike type, start and end station, and whether the rider is a member or a casual rider.</p>
+    <ul>
+      <li><strong>Credibility:</strong> the data comes from the company’s own trip logs, is current and is publicly cited. <span class="todo">Add your ROCCC assessment.</span></li>
+      <li><strong>Privacy:</strong> there is no personally identifiable information, so I can’t tell where casual riders live or whether one person bought several passes.</li>
+    </ul>
+  </section>
+
+  <section id="cleaning">
+    <h2>Cleaning and manipulation</h2>
+    <p>I combined the monthly files into one table and prepared it for analysis. <span class="todo">Replace with the steps you actually did, with row counts before and after.</span></p>
+    <ul>
+      <li>Merged 12 monthly files into one dataset</li>
+      <li>Removed duplicates and rows with missing or invalid timestamps</li>
+      <li>Removed trips with negative or implausibly short durations</li>
+      <li>Added <code>ride_length</code> (end time minus start time) and <code>day_of_week</code></li>
+    </ul>
+  </section>
+
+  <section id="analysis">
+    <h2>Analysis summary</h2>
+    <p><span class="todo">Summarize in one paragraph what you compared: average ride length, rides by weekday, month and hour, bike type and popular stations.</span></p>
+  </section>
+
+  <section id="findings">
+    <h2>Key findings</h2>
+    <h3><span class="todo">Finding 1 as a full sentence</span></h3>
+    <figure>
+      <div class="fig">Replace this box with &lt;img src="visuals/chart-1.png" alt="Describe the chart"&gt;</div>
+      <figcaption><span class="todo">One sentence explaining what the chart shows.</span></figcaption>
+    </figure>
+    <h3><span class="todo">Finding 2 as a full sentence</span></h3>
+    <figure>
+      <div class="fig">Replace this box with &lt;img src="visuals/chart-2.png" alt="Describe the chart"&gt;</div>
+      <figcaption><span class="todo">One sentence explaining what the chart shows.</span></figcaption>
+    </figure>
+    <h3><span class="todo">Finding 3 as a full sentence</span></h3>
+    <figure>
+      <div class="fig">Replace this box with &lt;img src="visuals/chart-3.png" alt="Describe the chart"&gt;</div>
+      <figcaption><span class="todo">One sentence explaining what the chart shows.</span></figcaption>
+    </figure>
+  </section>
+
+  <section id="recommendations">
+    <h2>Top three recommendations</h2>
+    <ol>
+      <li><span class="todo">Recommendation 1, tied to a finding</span></li>
+      <li><span class="todo">Recommendation 2, tied to a finding</span></li>
+      <li><span class="todo">Recommendation 3, tied to a finding</span></li>
+    </ol>
+  </section>
+
+  <section id="next">
+    <h2>Next steps</h2>
+    <p>Data that would strengthen these findings: pricing and revenue per ride type, customer survey responses about why casual riders don’t join, and station location data to target campaigns. The two remaining business questions are why casual riders would buy a membership and how digital media can influence them.</p>
+  </section>
+</main>
+<footer><div class="wrap">© 2026 <span class="todo">Your Name</span>. <a href="index.html">Back to all projects</a></div></footer>
+</body>
+</html>
